@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container max-auto min-h-screen min-w-full 
+    bg-gradient-to-br from-pink-600  via-amber-200  to-blue-600 
+    justify-center items-center ">
+
+        <div class="justify-center  items-center flex " >
+            
+            <img src="images/to-do-list.png" class="h-40 md:h-80">
+            
+                <h1 class="main_title font-bold text-4xl pl-1 md:text-7xl md:pl-3 ">List</h1>
+                            
+        </div>
+
+        <div class=" flex justify-center items-center">
+            <p class="sub_title  mt-3 w-4/5 text-center md:text-3xl"><b>Empower Your Productivity: </b>Manage Tasks Effortlessly with To-Do App!</p>
+        </div>
+        <!-- <br><br><hr> -->
+         
+        <div class="flex justify-center items-center mt-5 md:mt-8">
+
+               <div class="flex flex-col md:flex-row justify-center items-center w-3/4 min-h-10 md:space-x-8 ">
+
+                
+                        
+                    <input id="inputText" placeholder="Enter you tasks..." class="outline-none	  rounded-lg h-10 w-full md:w-3/4 drop-shadow-md placeholder:italic placeholder:text-center">
+                
+                    
+                    <button onclick="addTaskItem()" class="bg-blue-600 rounded-lg w-2/6 md:w-1/6 flex justify-center items-center h-10 shadow-xl drop-shadow-md mt-5 md:mt-0 hover:drop-shadow-2xl hover:bg-blue-500 ">
+                        <p class="font-mono font-extrabold text-base md:text-xl text-white">ADD</p>
+                    </button>
+                    
+               
+                
+            </div>
+        </div>
+
+
+        <div class="w-full flex justify-center items-center mt-8 ">
+
+            <div id="tasklist" class=" flex flex-col justify-center items-center bg-white rounded-lg  " style="width: 73%;;" >
+
+                
+
+                <!-- <div  class="taskItem bg-white min-h-11  
+                flex  items-center relative w-full border border-x-transparent border-t-transparent border-b-slate-400 p-1">
+                    
+                    <div class="flex items-center w-10 md:w-12 md:pl-1">
+                            <input id="" type="checkbox" class="taskCheckBox md:h-6 md:w-6 h-4 w-4">
+                    </div>
+
+                    <div class=" w-5/6 h-20 md:h-11 flex md:truncate  overflow-hidden items-center	">
+                        <p class="text-sm md:text-base md:truncate" id="taskItemText">INPUTVALUE</p>
+                    </div >
+
+                    <div class="w-1/6 flex items-center" id="deleteDiv">
+                            <img src="images/delete.png" id="deleteButton" class="h-5 w-5 right-1 md:right-2 md:right-5 absolute cursor-pointer" >
+                    </div>
+</div> -->
+
+
+
+            </div>
+
+        </div>
+          
+    </div>
+
+
+    <script src="script.js">
+    </script>
+    
+</body>
+</html>
