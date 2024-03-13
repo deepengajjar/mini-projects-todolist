@@ -1,6 +1,6 @@
 var tasklist = document.getElementById("tasklist")
 var taskNo =0
-
+var  ESAPI = require('node-esapi')
 
 function addTaskItem(){
 
@@ -42,8 +42,8 @@ function addTaskItem(){
     var taskItemText = document.createElement("p")
     taskItemText.className =`taskItemText text-sm md:text-base md:truncate pl-2`
     taskItemText.id='taskItemText'
-    taskItemText.innerHTML=inputTextValue
-
+    taskItemText.innerText=  inputTextValue
+    
     taskItemText_main = taskItemText_main.appendChild(taskItemText)
 
 
@@ -87,6 +87,22 @@ function addTaskItem(){
 
 
 } // addTaskItem()
+
+
+
+var inputText = document.getElementById('inputText')
+
+inputText.addEventListener("keypress", function (event) {
+
+    if (event.key == "Enter") {
+        event.preventDefault()
+        document.getElementById('AddTaskBtn').click()
+    } 
+    
+})
+
+
+
 
 
 
